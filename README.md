@@ -62,7 +62,7 @@ Vous devez,
  
  ```c
    // à compléter et utiliser
-   typedef ... `__int128` int128_t;
+   typedef ... __int128 uint128_t;
    typedef struct vector_t ...;
    typedef enum ... bool_t;
  ```
