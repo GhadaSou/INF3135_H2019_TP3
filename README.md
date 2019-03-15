@@ -49,9 +49,9 @@ Vous devez,
  + utiliser plusieurs fois les directives au préprocesseur;
  + utiliser le blocage des inclusions multiple au format _NOM_H_ pour chaque fichier d'entête;
  + soumettre votre programme à `valgrind` via `make valgrind`;
- + utiliser les librairies standard et portable du langage C. `getopt.h` et `unistd.h` ne sont pas accepté;
+ + utiliser les librairies standard et portable du langage C. `getopt.h` et `unistd.h` ne sont pas acceptées;
  + documenter vos prises de décisions importantes dans README.md;
- + respirer, manger, réfléchir, s'organiser, s'amuser.
+ + respirer, manger, réfléchir, planifier, vous amuser.
  
  ### Détails
  - `-d` pour display
