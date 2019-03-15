@@ -79,10 +79,10 @@ Vous devez,
  01234 0
  0 19929
  0000199282 9999999999
- 01 <kbd>TAB</kbd> 19
- 27 <kbd>SPACE</kbd> 28
  ~~~
- 
+ `01` <kbd>TAB</kbd><kbd>TAB</kbd> `19`
+ `27` <kbd>SPACE</kbd><kbd>SPACE</kbd> `28`
+
  #### exemple d'ntervalle non valide
  ~~~
  01234 a
@@ -256,4 +256,4 @@ La totalité de votre travail :
 
 
 ----
-par Guy Francoeur
+auteur Guy Francoeur
