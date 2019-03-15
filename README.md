@@ -67,6 +67,13 @@ Vous devez,
    typedef enum ... bool_t;
  ```
  
+ #### Utilisation d'un TAD (type abstrait de données)
+   - Vous devez utiliser une structure de données pour y insérer les nombres parfaits trouvés.
+ 
+ + Dans ce travail les fichiers de données peuvent contenir plusieurs intervalles;
+ + La fin de fichier `EOF` termine la lecture;
+ + Un intervalle par ligne.
+  
 ## Exécution et performance
  + Tous les tests auront une limite de temps;
  + Chaque exécution ne pourra dépasser qu'au maximum 99 secondes;
