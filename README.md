@@ -82,7 +82,7 @@ Vous devez,
  99       10021
  ~~~
 
-+ Il est possible d'avoir plusiers <kbd>TAB</kbd> ou plusieurs <kbd>SPACE</kbd> entre les nombres
++ Il est possible d'avoir plusieurs <kbd>TAB</kbd> ou plusieurs <kbd>SPACE</kbd> entre les nombres
 
  #### exemple d'ntervalle non valide
  ~~~
