@@ -73,7 +73,42 @@ Vous devez,
  + Dans ce travail les fichiers de données peuvent contenir plusieurs intervalles;
  + La fin de fichier `EOF` termine la lecture;
  + Un intervalle par ligne.
-  
+ 
+ #### Exemples d'intervalle valide
+ ~~~
+ 01234 0
+ 0 19929
+ 0000199282 9999999999
+ 01 <kbd>TAB</kbd> 19
+ 27 <kbd>SPACE</kbd> 28
+ ~~~
+ 
+ #### exemple d'ntervalle non valide
+ ~~~
+ 01234 a
+ -12 19929
+ as ij
+ ~~~
+ 
+ #### Exemple de fichier valide même si un intervalle n'est pas valide
+ 
+ `$ ./tp3 -d DEC -c FRAG01010199 < fichier.in > fichier.out`
+ 
+ ##### fichier.in
+ ~~~
+ 400     501
+ 27 a
+ 27 29
+ 29 -1
+ ~~~
+ 
+ ##### fichier.out
+ ~~~
+ 496
+ 28
+ ~~~
+ 
+ 
 ## Exécution et performance
  + Tous les tests auront une limite de temps;
  + Chaque exécution ne pourra dépasser qu'au maximum 99 secondes;
