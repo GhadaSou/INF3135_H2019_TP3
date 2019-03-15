@@ -79,15 +79,17 @@ Vous devez,
  01234 0
  0 19929
  0000199282 9999999999
+ 99       10021
  ~~~
- `01` <kbd>TAB</kbd><kbd>TAB</kbd> `19`
- `27` <kbd>SPACE</kbd><kbd>SPACE</kbd> `28`
+
++ Il est possible d'avoir plusiers <kbd>TAB</kbd> ou plusieurs <kbd>SPACE</kbd> entre les nombres
 
  #### exemple d'ntervalle non valide
  ~~~
  01234 a
  -12 19929
  as ij
+ 0192
  ~~~
  
  #### Exemple de fichier valide même si un intervalle n'est pas valide
