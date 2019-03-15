@@ -1,4 +1,4 @@
-# Travail pratique 3 am/lioration d'un programme/logiciel
+# Travail pratique 3 amélioration d'un programme/logiciel
 ## avec le langage C, make/Makfile, Git, Linux et Bash
 
 ----
