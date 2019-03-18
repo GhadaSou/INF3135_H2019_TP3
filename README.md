@@ -56,7 +56,7 @@ Vous devez,
  ### Détails
  - `-d` pour display
  - `ASC` ascending = croissant
- - `DEC` decending = decroisant
+> > - `DES` descending = décroisant
 
  ### Encore plus de details
  
@@ -68,7 +68,8 @@ Vous devez,
  ```
  
  #### Utilisation d'un TAD (type abstrait de données)
-   - Vous devez utiliser une structure de données pour y insérer les nombres parfaits trouvés.
+   - Vous devez utiliser une structure de données pour y insérer les nombres parfaits trouvés;
+ > >  - La structure devra contenir des nombres unique.
  
  + Dans ce travail les fichiers de données peuvent contenir plusieurs intervalles;
  + La fin de fichier `EOF` termine la lecture;
@@ -94,13 +95,14 @@ Vous devez,
  
  #### Exemple de fichier valide même si un intervalle n'est pas valide
  
- `$ ./tp3 -d DEC -c FRAG01010199 < fichier.in > fichier.out`
+ `$ ./tp3 -d DES -c FRAG01010199 < fichier.in > fichier.out`
  
  ##### fichier.in
  ~~~
  400     501
  27 a
  27 29
+ 7    28
  29 -1
  ~~~
  
