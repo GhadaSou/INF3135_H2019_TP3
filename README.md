@@ -56,7 +56,7 @@ Vous devez,
  ### Détails
  - `-d` pour display
  - `ASC` ascending = croissant
-> > - `DES` descending = décroisant
+> > - `DES` descending = décroissant
 
  ### Encore plus de details
  
