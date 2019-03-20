@@ -23,13 +23,16 @@
 ## Description du travail
 
   Le programme doit découvrir de nouveaux `nombres parfaits` contenus dans un intervalle composé d’entiers naturels.
-  ```math
-   N = { 0, 1, 2, ... }
-  ```
+
+N = { 0, 1, 2, ..., &infin; }
+
+&infin; = 2<sup>128</sup> - 1
+
   Un nombre est dit parfait lorsque la somme de tous ses diviseurs (excluant lui-même bien sûr) est égale à lui-même.
   
   Vous avez aussi compris que, pour trouver les diviseurs, il n'est pas nécessaire de tester tous les nombres.  Donc, 
-  la validation d'un nombre parfait potentiel ne devrait pas se faire en O(n).
+  la validation d'un nombre parfait potentiel ne devrait pas se faire en O(n). Et valider un nombre parfait potentiel 
+  devrait ce faire en auplus O(&radic;&nbsp;n&nbsp;) pour ce travail.
 
 ## Qualité du livrable
 
