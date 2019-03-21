@@ -44,7 +44,7 @@ N = { 0, 1, 2, ..., &infin; }
 Vous devez,
  + utiliser des entiers 128bit;
  + lire des nombres jusqu'à la limite de 128bit non signé;
- + ajouter une option `-d ASC | DEC` à la ligne de commande, le default est DEC;
+> > + ajouter une option `-d ASC | DES` à la ligne de commande, le default est DES;
  + utiliser l'instruction `struct`;
  + définir plusieurs types avec `typedef`;
  + utiliser une ou plusieurs fois la fonction `malloc()`;
@@ -98,7 +98,11 @@ Vous devez,
  
  #### Exemple de fichier valide même si un intervalle n'est pas valide
  
- `$ ./tp3 -d DES -c FRAG01010199 < fichier.in > fichier.out`
+ > > Exemple #1 : `$ ./tp3 -d DES -c FRAG01010199 < fichier.in > fichier.out`
+ > > Exemple #2 : `$ ./tp3 -c FRAG01010199 -d DES -i fichier.in > fichier.out`
+ 
+ > > + Il y a plusieurs façon d'écrire la commande. Toutes les combinaises doivent être supportées.
+ > > + Le code retour pour `intervalles invalides` est retourné seulement si *tous* les intervalles du ficheir sont invalides.
  
  ##### fichier.in
  ~~~
@@ -217,14 +221,14 @@ done
 ## Remise
 
 La totalité de votre travail :
- + doit être remis le **X avril 2019** à **23h59** 
+ + doit être remis le **lundi 29 avril 2019** à **23h59**
  + Après cette date, la note zéro sera appliquée.
 
   La remise se fait **obligatoirement** par l'intermédiaire de l'un des gestionnaires de versions suivants :
   + `GitHub https://github.com/____`;
   + `GitLab https://gitlab.com/____`.
   
-  Votre projet doit être privé.
+  *Votre projet doit être privé.*
   
   **Aucune remise par courriel ne sera acceptée** (le travail sera considéré comme non remis).
 
