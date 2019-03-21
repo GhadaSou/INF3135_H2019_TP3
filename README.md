@@ -88,7 +88,7 @@ Vous devez,
 
 + Il est possible d'avoir plusieurs <kbd>TAB</kbd> ou plusieurs <kbd>SPACE</kbd> entre les nombres
 
- #### exemple d'ntervalle non valide
+ #### Exemple d'intervalle non valide
  ~~~
  01234 a
  -12 19929
