@@ -98,8 +98,8 @@ Vous devez,
  
  #### Exemple de fichier valide même si un intervalle n'est pas valide
  
- > > Exemple #1 : `$ ./tp3 -d DES -c FRAG01010199 < fichier.in > fichier.out`
- > > Exemple #2 : `$ ./tp3 -c FRAG01010199 -d DES -i fichier.in > fichier.out`
+ > > + Exemple #1 : `$ ./tp3 -d DES -c FRAG01010199 < fichier.in > fichier.out`
+ > > + Exemple #2 : `$ ./tp3 -c FRAG01010199 -d DES -i fichier.in > fichier.out`
  
  > > + Il y a plusieurs façon d'écrire la commande. Toutes les combinaises doivent être supportées.
  > > + Le code retour pour `intervalles invalides` est retourné seulement si *tous* les intervalles du ficheir sont invalides.
