@@ -196,6 +196,38 @@ do
   #votre code ici
 done
 ```
+#### Makefile
+
+  + Vous ne devez en aucun temps effacer des fichier ou des repertoires en dehors de votre structure;
+  + Vous pouvez créer des cibles pour vos besoins;
+  + Les cibles du TP1 et TP2 doivent être corriger seulement, aucun ajout de fonctionnalité dans un cible existante;
+  + un Makefile ne peut pas contenir des commandes `make`.
+  
+```bash
+CP= ...
+CFLAGS=-Wall -pedantic -std=c99
+
+tp1:
+        #la commande pour le tp1 (facultatif) 
+
+tp2:
+        #la commande pour le tp2
+
+tp3:
+        #la nouvelle commande du tp3
+
+data:
+        #ici comme dans le tp1
+        
+test:
+        #ici comme dans le tp1
+        
+resultat:
+        #ici comme dans le tp1
+        
+...
+
+```
 
 ### Gestion de projet et collaborations
  + tous compléments d'information seront ajoutés au `wiki`;
