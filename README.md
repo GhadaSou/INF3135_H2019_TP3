@@ -198,13 +198,13 @@ done
 ```
 #### Makefile
 
-  + Vous ne devez en aucun temps effacer des fichier ou des repertoires en dehors de votre structure;
-  + Vous pouvez créer des cibles pour vos besoins;
-  + Les cibles du TP1 et TP2 doivent être corriger seulement, aucun ajout de fonctionnalité dans un cible existante;
+  + Vous ne devez en aucun temps effacer des fichiers ou des répertoires en dehors de votre structure;
+  + Vous pouvez créer des `cibles` pour vos besoins;
+  + Les cibles du TP1 et TP2 doivent être corrigé seulement, aucun ajout de fonctionnalité dans une cible existante;
   + un Makefile ne peut pas contenir des commandes `make`.
   
 ```bash
-CP= ...
+CP=...
 CFLAGS=-Wall -pedantic -std=c99
 
 tp1:
@@ -224,7 +224,10 @@ test:
         
 resultat:
         #ici comme dans le tp1
-        
+
+clean:
+        #fichier de votre répertoire (racine de travail) et sous répertoires uniquement
+
 ...
 
 ```
