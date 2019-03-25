@@ -129,7 +129,8 @@ Vous devez,
  + Il existe plusieurs façons de faire les tests. Nous utilisons le `bash` dans ce travail;
  + Tous les tests contenus dans le fichier `inf3135-h2019-tp3.correction` doivent être exécutés sans problème par le script `evaluer-tp3.sh`;
  + Vous devez produire quelque chose de similaire à `output` qui est un exemple;
- + Le script doit être dynamique. (copier et coller fait par un humain n'est pas accepté ni acceptable).
+ + Le script doit être dynamique. (copier et coller fait par un humain n'est pas accepté ni acceptable);
+> > + Pour qu'un test de regression fonctionne, la fonctionnalité doit obligatoirement etre la même.
 
 #### output (exemple)
 ~~~~
@@ -289,17 +290,15 @@ La totalité de votre travail :
 | Critère | Sous-critère | Points |
 | ------- |:------------ | ------:|
 | Script (test)     | Script bash pour test `evaluer-tp3.sh`           |  2.0 |
-| Compilation       | sans avertissement ni erreur                     |  1.0 |
-| Fonctionnabilité  | 5 à 10 tests seront lancés (comparaison binaire) |  6.0 |
-| Modularité        | respect des exigences                            |  2.0 |
+| Compilation       | sans avertissement ni erreur                     |  2.0 |
+| Fonctionnabilité  | 5 à 10 tests seront lancés (comparaison binaire) |  5.0 |
+| Modularité        | respect des exigences                            |  3.0 |
 | Type Abstrait     | définition et utilisation d'un TAD               |  2.0 |
-| Qualité           | temps d'exécution, mémoire                       |  3.0 |
+| Qualité           | exécution, mémoire, (segmentation, fuites)       |  3.0 |
 | Makefile          | complet, simple, sans extra                      |  1.0 |
-| Contribution      | wiki et issues                                   |  1.0 |
-| Réflexion         | Qualité des questions, réponses                  |  1.0 |
-| Français          | compréhension, écriture                          |  1.0 |
+| Git               | votre git est parfait                            |  1.0 |
+| Français          | compréhension, écriture, réflexion               |  1.0 |
 | **Total**         |                                                  | 20/20 |
-
 
 ----
 auteur Guy Francoeur
