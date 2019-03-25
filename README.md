@@ -1,6 +1,7 @@
 # Travail pratique 3 amélioration d'un programme/logiciel
 
 + débutez vos tests avec le fichier de correction du TP2
+> > + Voici le fichier pour le TP3 [inf3135-h2019-tp3.correction](https://github.com/guyfrancoeur/INF3135_H2019_TP3/blob/master/inf3135-h2019-tp3.correction)
 
 ## Objectifs
   L'objectif est de vous initier à la programmation avec le langage C, en  manipulant
@@ -172,6 +173,8 @@ Voici la variante que je propose pour le tp3 :
  + 3 : code de retour
  + 4 : description
  + 5 : commande
+ 
+ > > + Le temps d'exécution avec un valeur 00 sera fait sans la commande timeout.
 
 #### evaluer-tp3.sh
  + Vous devez ouvrir le fichier `inf3135-h2019-tp3.correction` et consommer les données contenues afin de tester votre programme de façon automatisé.
