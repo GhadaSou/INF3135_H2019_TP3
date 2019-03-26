@@ -33,18 +33,18 @@ N = { 0, 1, 2, ..., &infin; }
   
   Vous avez aussi compris que, pour trouver les diviseurs, il n'est pas nécessaire de tester tous les nombres.  Donc, 
   la validation d'un nombre parfait potentiel ne devrait pas se faire en O(n). Et valider un nombre parfait potentiel 
-  devrait ce faire en auplus O(&radic;&nbsp;n&nbsp;) pour ce travail.
+  devrait ce faire en au plus O(&radic;&nbsp;n&nbsp;) pour ce travail.
 
 ## Qualité du livrable
 
 + Livrer un logiciel de haute qualité;
-+ Aucune fuites de mémoire;
++ Aucune fuite de mémoire;
 
 ## Exigences et obligations
 
 Vous devez,
  + utiliser des entiers 128bit;
- + lire des nombres jusqu'à la limite de 128bit non signé;
+ + lire des nombres jusqu'à la limite de 128bit non signés;
 > > + ajouter une option `-d ASC | DES` à la ligne de commande, le default est DES;
  + utiliser l'instruction `struct`;
  + définir plusieurs types avec `typedef`;
@@ -62,7 +62,26 @@ Vous devez,
  - `ASC` ascending = croissant
 > > - `DES` descending = décroissant
 
- ### Encore plus de details
+### Détails sur les codes de retour
++ `0` : le programme s’est exécuté avec succès;
++ `1` : il n'y a `aucun` d'argument ou l'argument `-c` n'est pas présent;
++ `2` : l'argument -c est présent, mais le code n'est pas 12 de long;
++ `3` : un argument non voulu est présent. Voici un exemple : `-t BLA`;
++ `4` : l'intervalle n'est pas conforme; 
++ `5` : une erreur (lecture, existance, ...) avec le fichier en entrée;
++ `6` : une erreur (création, ...) avec le fichier en sortie; `Attention` Si le fichier existe il faut l'écraser;
++ `7` : l'argument -d est présent, mais la valeur passée n'est pas conforme;
+
+### Pour les codes `0`, `2`, `3`, `4`, `5`, `6`, `7`
+ + Aucun message (affichage) n'est nécessaire. Le code de retour est suffisant.
+
+### Pour le code `1` uniquement
+ + Il semble judicieux d'informer l'utilisateur que votre application a certains requis: 
+```c
+ fprintf(stderr, "Usage: %s <-c CODEpermanent> [-i fichier.in] [-o fichier.out] \n", argv[0]);
+```
+
+ ### Encore plus de détails
  
  ```c
    // à compléter et utiliser
@@ -73,9 +92,9 @@ Vous devez,
  
  #### Utilisation d'un TAD (type abstrait de données)
    - Vous devez utiliser une structure de données pour y insérer les nombres parfaits trouvés;
- > >  - La structure devra contenir des nombres unique.
+ > >  - La structure devra contenir des nombres uniques.
  
- + Dans ce travail les fichiers de données peuvent contenir plusieurs intervalles;
+ + Dans ce travail, les fichiers de données peuvent contenir plusieurs intervalles;
  + La fin de fichier `EOF` termine la lecture;
  + Un intervalle par ligne.
  
@@ -102,8 +121,8 @@ Vous devez,
  > > + Exemple #1 : `$ ./tp3 -d DES -c FRAG01010199 < fichier.in > fichier.out`
  > > + Exemple #2 : `$ ./tp3 -c FRAG01010199 -d DES -i fichier.in > fichier.out`
  
- > > + Il y a plusieurs façon d'écrire la commande. Toutes les combinaises doivent être supportées.
- > > + Le code retour pour `intervalles invalides` est retourné seulement si *tous* les intervalles du ficheir sont invalides.
+ > > + Il y a plusieurs façons d'écrire la commande. **Toutes les combinaisons doivent être supportées**.
+ > > + Le code retour pour `intervalles invalides` est retourné seulement si *tous* les intervalles du fichier sont invalides.
  
  ##### fichier.in
  ~~~
@@ -122,18 +141,19 @@ Vous devez,
  
  
 ## Exécution et performance
- + Tous les tests auront une limite de temps;
+ > > + Vous devez limiter les tests qui ont une limite de temps; exception pour les tests avec temps égal à `00`;
  + Chaque exécution ne pourra dépasser qu'au maximum 99 secondes;
  + Il est aussi possible qu'un test soit limité à 10 sec.
+
 
 ## Automatisation des tests unitaire et de régression
  + Il existe plusieurs façons de faire les tests. Nous utilisons le `bash` dans ce travail;
  + Tous les tests contenus dans le fichier `inf3135-h2019-tp3.correction` doivent être exécutés sans problème par le script `evaluer-tp3.sh`;
  + Vous devez produire quelque chose de similaire à `output` qui est un exemple;
  + Le script doit être dynamique. (copier et coller fait par un humain n'est pas accepté ni acceptable);
-> > + Pour qu'un test de regression fonctionne, la fonctionnalité doit obligatoirement etre la même.
+> > + Pour qu'un test de regression fonctionne, la fonctionnalité doit obligatoirement être la même.
 
-#### output (exemple)
+#### output (exemple : tentez d'être le plus proche possible)
 ~~~~
 0 : echec
 1 : reussi 1 pts
@@ -160,8 +180,10 @@ Vous devez,
 22 : echec
 23 : echec
 Note (total) pour FRAG01010199 dans inf3135-h2019-tp3: 11
-FIN.
+FRAG01010199\t11
 ~~~~
+
+> > + \t est <kbd>TAB</kbd>
 
 Voici la variante que je propose pour le tp3 :
 
@@ -174,7 +196,7 @@ Voici la variante que je propose pour le tp3 :
  + 4 : description
  + 5 : commande
  
- > > + Le temps d'exécution avec un valeur 00 sera fait sans la commande timeout.
+ > > + Le temps d'exécution avec une valeur 00 sera sans la commande timeout.
 
 #### evaluer-tp3.sh
  + Vous devez ouvrir le fichier `inf3135-h2019-tp3.correction` et consommer les données contenues afin de tester votre programme de façon automatisé.
@@ -215,7 +237,7 @@ tp1:
         #la commande pour le tp1 (facultatif) 
 
 tp2:
-        #la commande pour le tp2
+        #la commande pour le tp2 (facultatif)
 
 tp3:
         #la nouvelle commande du tp3
@@ -238,7 +260,7 @@ clean:
 
 ### Gestion de projet et collaborations
  + tous compléments d'information seront ajoutés au `wiki`;
- + toutes les questions seront ajoutées à la section `issues`;
+ + toutes les questions `pertinentes` seront ajoutées à la section `issues`;
  + aucune question par courriel;
  + toutes les questions devront être *posées dans le bon fils* de discussion (sujet pertinent);
  + toutes les questions devront avoir un `label`;
@@ -246,7 +268,7 @@ clean:
  + la qualité des interventions et du français est essentielle (très importante);
  + les questions sont pour l'obtention de précision uniquement;
  + si une question vise un élément académique incompris, nous adresserons celui-ci en classe;
- + aucun support sur vos machine personnel ne sera offert;
+ + aucun support sur vos machines personnel ne sera offert;
  + les demandes qui concernent des `bogues` doivent être accompagnées du message d'erreur;
  + aucune demande de solution ne sera tolérée;
  + aucun manque de respect ne sera toléré.
