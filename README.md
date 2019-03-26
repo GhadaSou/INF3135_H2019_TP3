@@ -1,7 +1,8 @@
 # Travail pratique 3 amélioration d'un programme/logiciel
 
-+ débutez vos tests avec le fichier de correction du TP2
-> > + Voici le fichier pour le TP3 [inf3135-h2019-tp3.correction](https://github.com/guyfrancoeur/INF3135_H2019_TP3/blob/master/inf3135-h2019-tp3.correction)
++ débutez vos tests avec le fichier de correction du TP1
+> > + Voici le fichier de correction du TP2 pour vos tests de regression du TP3 [inf3135-h2019-tp3.correction](https://github.com/guyfrancoeur/INF3135_H2019_TP3/blob/master/inf3135-h2019-tp3.correction)
+> > + Voici le fichier de données du TP2 utilisé par la correction [tp2-data.zip](https://github.com/guyfrancoeur/INF3135_H2019/raw/master/tp2/tp2-data.zip)
 
 ## Objectifs
   L'objectif est de vous initier à la programmation avec le langage C, en  manipulant
