@@ -67,7 +67,7 @@ Vous devez,
 + `1` : il n'y a `aucun` d'argument ou l'argument `-c` n'est pas présent;
 + `2` : l'argument -c est présent, mais le code n'est pas 12 de long;
 + `3` : un argument non voulu est présent. Voici un exemple : `-t BLA`;
-+ `4` : l'intervalle n'est pas conforme; 
++ `4` : l'intervalle n'est pas conforme; (Pour le `TP3` tous les intervalles doivent être invalides);
 + `5` : une erreur (lecture, existance, ...) avec le fichier en entrée;
 + `6` : une erreur (création, ...) avec le fichier en sortie; `Attention` Si le fichier existe il faut l'écraser;
 + `7` : l'argument -d est présent, mais la valeur passée n'est pas conforme;
