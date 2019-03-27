@@ -254,6 +254,8 @@ resultat:
 
 clean:
         #fichier de votre répertoire (racine de travail) et sous répertoires uniquement
+        #vous devez remettre votre repertoire dans son état d'origine
+        #ca veut dire que ce que est créé doit disparaitre (les fichiers temporaires, répertoires) 
 
 ...
 
