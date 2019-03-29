@@ -69,7 +69,7 @@ Vous devez,
 + `2` : l'argument -c est présent, mais le code n'est pas 12 de long;
 + `3` : un argument non voulu est présent. Voici un exemple : `-t BLA`;
 + `4` : l'intervalle n'est pas conforme; (Pour le `TP3` tous les intervalles doivent être invalides);
-+ `5` : une erreur (lecture, existance, ...) avec le fichier en entrée;
++ `5` : une erreur (lecture, ouverture, présence ...) avec le fichier en entrée;
 + `6` : une erreur (création, ...) avec le fichier en sortie; `Attention` Si le fichier existe il faut l'écraser;
 + `7` : l'argument -d est présent, mais la valeur passée n'est pas conforme;
 
@@ -82,7 +82,7 @@ Vous devez,
  fprintf(stderr, "Usage: %s <-c CODEpermanent> [-i fichier.in] [-o fichier.out] \n", argv[0]);
 ```
 
- ### Encore plus de détails
+ ### Plus de détails
  
  ```c
    // à compléter et utiliser
@@ -142,9 +142,10 @@ Vous devez,
  
  
 ## Exécution et performance
- > > + Vous devez limiter les tests qui ont une limite de temps; exception pour les tests avec temps égal à `00`;
- + Chaque exécution ne pourra dépasser qu'au maximum 99 secondes;
- + Il est aussi possible qu'un test soit limité à 10 sec.
+ > > + Vous devez limiter les tests qui ont une limite de temps;
+ > > + Exception Vous ne devez pas limiter les tests avec un temps égal à `00`;
+ + Chaque exécution ne pourra être supérieure à 99 secondes;
+ + Il est aussi possible qu'un test soit limité à 10 secondes.
 
 
 ## Automatisation des tests unitaire et de régression
@@ -228,7 +229,7 @@ done
   + Vous ne devez en aucun temps effacer des fichiers ou des répertoires en dehors de votre structure;
   + Vous pouvez créer des `cibles` pour vos besoins;
   + Les cibles du TP1 et TP2 doivent être corrigé seulement, aucun ajout de fonctionnalité dans une cible existante;
-  + un Makefile ne peut pas contenir des commandes `make`.
+  + un `Makefile` ne peut pas contenir des commandes `make`.
   
 ```bash
 CP=...
@@ -253,9 +254,10 @@ resultat:
         #ici comme dans le tp1
 
 clean:
-        #fichier de votre répertoire (racine de travail) et sous répertoires uniquement
-        #vous devez remettre votre repertoire dans son état d'origine
-        #ca veut dire que ce que est créé doit disparaitre (les fichiers temporaires, répertoires) 
+        #fichier de votre répertoire (racine de travail) et sous répertoires uniquement;
+        #vous devez remettre votre répertoire dans son état d'origine;
+        #en d'autres mots, ce que est créé doit disparaître (les fichiers temporaires, répertoires);
+        #ce qui ce passe ici doit être réfléchi.
 
 ...
 
