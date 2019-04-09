@@ -8,7 +8,8 @@
 1 10 0 make clean (test)     test ! -f tp2.o && test ! -f tp2 && test ! -d data && test ! -f outils.o && test ! -f data.zip
 0 10 0 make resultat         grep -c -e 'resultat:' -e 'resultat :' Makefile
 0 10 0 README.md             test -f README.md
-1 10 0 compilation           gcc -Wall -pedantic -std=c99 -lm -O2 -o tp2 tp2.c outils.c &> compilation.guy ; test ! -s compilation.guy
+1 10 0 compilation           gcc -Wall -pedantic -std=c99 -lm -O2 -o tp3 tp3.c outils.c structure.c &> compilation.guy ; test ! -s compilation.guy
+0 00 0 ** modification **    ln -sf tp3 tp2
 0 15 0 code.txt              ./tp2 -c $(cat cp.txt) -i ~/depot/data0.in ; test -f code.txt
 1 10 1 c.retour 1            ./tp2
 1 10 2 c.retour 2            ./tp2 -c FRAG
@@ -33,4 +34,3 @@
 1 00 0 evaluer.sh (diff)     WC=$(wc -l evaluer-tp2.guy) ; test ${WC:0:2} -ge 25 -a ${WC:0:2} -le 30
 2 00 0 verification bash     V1=$(head -n 1 evaluer-tp2.guy) ; test "$V1" == "0: reussi 0 pts" -o "$V1" == " 0 : reussi 0 pts" -o "$V1" == "0 : reussi 0 pts"
 4 00 0 contribution git fr   echo "Bravo pour la participation et la remise de votre travail."
-2 00 0 Bonus                 remise="2019-03-09 23:59:59" ; d1=$(date -d "$(git log -1 --format="%ai" -- tp2.c outils.c evaluer.sh)" +%s) ; d2=$(date -d "$remise" +%s) ; JOUR=$(( ($d1 - $d2) / 86400 )) ; test $JOUR -lt 1
