@@ -87,9 +87,11 @@ Vous devez,
  ```c
    // à compléter et utiliser
    typedef ... __int128 uint128_t;
-   typedef struct vector_t ...;
-   typedef enum ... bool_t;
+   typedef struct ... structure_t;
+   typedef enum ... sort_t;
  ```
+ > > votre structure aura un `_s` pour terminer le nom. Exemple `ma_structure_s`, `vector_s`, `linklist_s` ou `bst_s`
+ > > `sort_t` au lieu de `bool_t`
  
  #### Utilisation d'un TAD (type abstrait de données)
    - Vous devez utiliser une structure de données pour y insérer les nombres parfaits trouvés;
