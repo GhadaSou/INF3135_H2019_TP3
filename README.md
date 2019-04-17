@@ -4,6 +4,8 @@
 > > + Voici le fichier de correction du TP2 pour vos tests de regression du TP3 [inf3135-h2019-tp3.correction](https://github.com/guyfrancoeur/INF3135_H2019_TP3/blob/master/inf3135-h2019-tp3.correction)
 > > + Voici le fichier de données du TP2 utilisé par la correction [tp2-data.zip](https://github.com/guyfrancoeur/INF3135_H2019/raw/master/tp2/tp2-data.zip)
 
+> > Vous pouvez consulter les : [Sujets fermés](https://github.com/guyfrancoeur/INF3135_H2019_TP3/issues?q=is%3Aissue+is%3Aclosed)
+
 ## Objectifs
   L'objectif est de vous initier à la programmation avec le langage C, en  manipulant
   des données, des fichiers, ainsi que la gestion des `arguments` et `options` provenant de la ligne de commande.
