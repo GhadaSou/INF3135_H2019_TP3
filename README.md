@@ -3,6 +3,7 @@
 + débutez vos tests avec le fichier de correction du TP1
 > > + Voici le fichier de correction du TP2 pour vos tests de regression du TP3 [inf3135-h2019-tp3.correction](https://github.com/guyfrancoeur/INF3135_H2019_TP3/blob/master/inf3135-h2019-tp3.correction)
 > > + Voici le fichier de données du TP2 utilisé par la correction [tp2-data.zip](https://github.com/guyfrancoeur/INF3135_H2019/raw/master/tp2/tp2-data.zip)
+> > + Voici le fichier de données ZIP pour le TP3 au cas ou! [tp3-data.zip](https://github.com/guyfrancoeur/INF3135_H2019/raw/master/tp3/tp3-data.zip)
 
 > > Vous pouvez consulter les [Sujets fermés](https://github.com/guyfrancoeur/INF3135_H2019_TP3/issues?q=is%3Aissue+is%3Aclosed)
 
