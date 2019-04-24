@@ -6,7 +6,10 @@ then
 else
   correction=$1
 fi
-wget -q https://github.com/guyfrancoeur/INF3135_H2019_TP3/raw/master/${correction} -O ${correction}
+if [ ! -f inf3135-h2019-tp3.correction ]
+then
+  wget -q https://github.com/guyfrancoeur/INF3135_H2019_TP3/raw/master/${correction} -O ${correction}
+fi
 if [ ! -f inf3135-h2019-tp3.correction ]
 then
   echo "erreur fatale, fichier correction inexistent."
